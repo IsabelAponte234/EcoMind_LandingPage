@@ -1,0 +1,21 @@
+# ==============================
+# Archivos y carpetas del editor
+# ==============================
+.vscode/
+.idea/
+*.code-workspace
+
+# ==============================
+# Archivos del sistema operativo
+# ==============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# Archivos temporales
+# ==============================
+*.tmp
+*.swp
+*.bak
+*.old
