@@ -109,14 +109,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Event listener específico para el botón Únete
     const btnUnete = document.querySelector('.btn-unete');
-    if (btnUnete) {
-        btnUnete.addEventListener('click', function(e) {
-            e.preventDefault();
-            showSignup();
-        });
+    const btnExploraRetos = document.querySelector('.btn-primario');
+    
+    function addSignupListener(button) {
+    if (button) {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                showSignup();
+            });
+        }
     }
+
+    addSignupListener(btnUnete);
+    addSignupListener(btnExploraRetos);
     
     // Event listener para el botón Regresar
     const btnRegresar = document.getElementById('btnRegresar');
